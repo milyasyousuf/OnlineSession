@@ -1,0 +1,75 @@
+For downloading git application:
+http://git-scm.com/download
+
+
+
+For configuration
+------------------------------------------
+git config --global user.name "username" 
+git config --global user.name "email "
+------------------------------------------
+
+Upload file in my repo
+----------------------------
+echo "# testrepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:ilyasx/testrepo.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:ilyasx/testrepo.git
+git push -u origin master
+--------------------------------------------
+Delete 
+-------
+git rm fileName
+git commit -m "your commit "
+
+Rename
+------------------------
+
+git mv oldName newName
+
+--------------------------------------------
+
+
+ssh keygen
+-----------
+ssh-keygen -t rsa -b 4096 -C "m_ilyas@outlook.com"
+
+
+
+# Creates a new ssh key, using the provided email as a label
+Generating public/private rsa key pair.
+
+Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+
+
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+
+
+------------------------------------------------------------
+
+
+
+
+Before you generate an SSH key, you can check to see if you have any existing SSH keys.
+
+    Open the command line and enter:
+
+    ls -al ~/.ssh
+    # Lists the files in your .ssh directory, if they exist
+
+    Check the directory listing to see if you already have a public SSH key.
+
+By default, the filenames of the public keys are one of the following:
+
+    id_dsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+    id_rsa.pub
+
